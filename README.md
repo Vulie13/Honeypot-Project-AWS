@@ -120,7 +120,7 @@ Figure 7
 
 In figure 8,
 - Hourly Attacks: 147 attempts recorded.
-- Last 24 Attacks: 204  attempts recorded over the last 24 hours.
+- Last 24 hours Attacks: 204  attempts recorded over the last 24 hours.
 - IP Reputation: Suggest known and Unknown  Attacker
 - Protocols Attacked : SSH, Telnet, HTTP, IPP and Others
 - Primary Source: The highest number of attacks (92) originated from Luxembourg
@@ -165,4 +165,18 @@ Figure 10
 
 Figure 11
 
+### Security Meter
+
+Figure 12, diplays overview of Alerts on the security meter
+
+- Alerts per Hour : 3231020
+- Alerts per 24 hours : 80261094
+- Types : Network service, network management
+- Ports: 22, 23, 80 etc
+- URL : /edge, /root etc
+
+  
+<img width="816" height="450" alt="security meter - overview" src="https://github.com/user-attachments/assets/c998f958-f93f-4e91-95cc-900fa2a7dda6" />
+
+Figure 12
 
