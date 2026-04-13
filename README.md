@@ -20,7 +20,7 @@ The overview of this project is to deploy a honeypot using the T-Pot on an Amazo
   - Spiderfoot
   - Elasticvue
   - Kibana
-  - Secuirty Meter
+ 
  
   # Setup Instructions
 
@@ -99,5 +99,70 @@ In figure 6, Sign in using the username and password from the T-pot installation
 <img width="239" height="191" alt="web interface" src="https://github.com/user-attachments/assets/8cacb111-efba-41de-8f89-f36093fac74c" />
 
 Figure 6 : Sign In
+
+## Step 5: T-Pot Utilization
+
+Afetr Sign In the figure 7 should be displayed.
+
+-Attack Map : Provides a dynamic, real-time view of incoming attacks plotted on a world map
+- CyberChef: Analyze data transformations, including decoding payloads or viewing suspicious file contents.
+- Elasticvue: Manage and query Elasticsearch indices for deeper data insights.
+- Kibana : Interactive dashboard and data exploration to visualize attack trends
+- Spiderfoot: Perform reconnaissance on attacker IPs to gather context on potential threats.
+
+<img width="937" height="471" alt="Tpot interface" src="https://github.com/user-attachments/assets/578e90f2-fe5f-498d-84ef-b5163f5c27dd" />
+
+Figure 7
+
+## Data Analysis
+
+### Attack Map
+
+In figure 8,
+- Hourly Attacks: 147 attempts recorded.
+- Last 24 Attacks: 204  attempts recorded over the last 24 hours.
+- IP Reputation: Suggest known and Unknown  Attacker
+- Protocols Attacked : SSH, Telnet, HTTP, IPP and Others
+- Primary Source: The highest number of attacks (92) originated from Luxembourg
+  
+- Insight: The high attack frequency from Luxembourg may indicate concentrated botnet activity or automated scans. Applying geo-blocking or monitoring Luxembourg IP addresses closely may help in mitigating potential threats.
+
+<img width="951" height="473" alt="attack map" src="https://github.com/user-attachments/assets/bd7ad3f3-cb71-44d7-a5bc-60d0721d3075" />
+
+Figure 8 
+
+### Cowrie Dashboard 
+
+In Figure 9,
+- Total Attacks: 209 attacks were recorded. 
+- Unique IP addresses: 17 were recorded
+- Top Attack Sources: Significant attack traffic came from Luxembourg, China, India, Taiwan, the United States, and Russia.
+- Protocol Attacked: The main targets were SSH, HTTP and Telnet services, with Telnet experiencing slightly higher engagement.
+- Insight: This suggests attackers aim to gain shell access, often using weak credentials to establish persistent connections.
+  
+- Usernames: Default usernames like root, admin, oracle, and ubuntu were frequently targeted, indicating they are typical entry points in credential-stuffing attacks.
+- Password Trends: Commonly used passwords include weak combinations like 123456, admin123, and password, highlighting attackers' reliance on easily guessable passwords.
+- Insight: The use of weak or default credentials in attacks highlights the need for strict access control measures, such as enforcing strong password policies and disabling default accounts.
+
+
+<img width="1701" height="2667" alt="t-pot-kibana-cowrie-dashboard-1" src="https://github.com/user-attachments/assets/073fb676-20ef-4df8-be1a-4c7162c6a606" />
+
+Figure 9 
+
+### Sipderfoot
+
+In fgure 10, a scan is performed, result shows :
+- Risk Level : (1) High risk considered malicious with Multiple sources
+- Trace IP : 176.65.139.64
+- Results of the IP address from AbuseIP Database Website ()
+
+<img width="694" height="398" alt="spiderfoot-correlatiion" src="https://github.com/user-attachments/assets/dcc1f534-62d8-45b7-99ca-f8c8a5c05175" />
+
+Figure 10
+
+
+<img width="833" height="422" alt="spiderfoot-correlatiion- high" src="https://github.com/user-attachments/assets/32b9fd3a-6b45-4a05-9f37-f79d32f99448" />
+
+Figure 11
 
 
