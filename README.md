@@ -180,3 +180,11 @@ Figure 12, diplays overview of Alerts on the security meter
 
 Figure 12
 
+
+## Recommendations 
+- Disable unused ports and limit access to critical services.
+- Enable multi-factor authentication (MFA) for SSH access.
+- Deploy additional honeypot types for a broader attack surface.
+- Automate alerting and reporting for higher-priority incidents.
+- Conduct regular log reviews to detect unusual access attempts.
+
